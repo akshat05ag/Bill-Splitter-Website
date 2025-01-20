@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    background-color: #6f3cff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.bill-input, .bill-output {
+    width: 45%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bill-input h2, .bill-output h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container span {
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 6px 0 0 6px;
+}
+
+.custom-tip, .gray-input, .currency-dropdown {
+    background-color: #eee;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6f3cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e2dbc;
+}
+
+.tip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tip {
+    background-color: #9c60ff;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.tip.selected {
+    background-color: #ff9500;
+}
+
+.bill-output p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    background-color: #ff6b6b;
+}
+
+.reset-btn:hover {
+    background-color: #d65a5a;
+}
